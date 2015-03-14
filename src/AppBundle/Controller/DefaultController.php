@@ -9,11 +9,11 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/", name="homepage")
+     * @Route("/kto-ziarno.html", name="kto-ziarno")
      */
-    public function indexAction()
+    public function ktoziarnoAction()
     {
-        return $this->render('default/index.html.twig');
+        return $this->render('default/kto-ziarno.html.twig');
     }
 
     /*
