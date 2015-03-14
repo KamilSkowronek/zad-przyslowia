@@ -9,13 +9,13 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/kto-ziarno.html", name="kto-ziarno")
+     * @Route("/", name="homepage")
      */
-    public function ktoziarnoAction()
+    public function indexAction()
     {
-        return $this->render('default/kto-ziarno.html.twig');
+        return $this->render('default/index.html.twig');
     }
-
+ 
     /*
      * A
      */
@@ -322,7 +322,14 @@ public function ktopodkimdolkiAction()
     return $this->render('default/kto-pod-kim-dolki.html.twig');
 }
     
-    
+    /**
+     * @Route("/kto-ziarno.html", name="kto-ziarno")
+     */
+    public function ktoziarnoAction()
+    {
+        return $this->render('default/kto-ziarno.html.twig');
+    }
+
     
     
     
