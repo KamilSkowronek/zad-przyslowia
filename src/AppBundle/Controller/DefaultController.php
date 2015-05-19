@@ -711,4 +711,15 @@ public function  bramaAction()
 {
     return $this->render('default/brama.html.twig');
 }
+
+/*
+* BP
+*/
+/**
+* @Route("/gdy-w-styczniu.html", name="gdy-w-styczniu")
+*/
+ public function  gdywstyczniuAction()
+{
+    return $this->render('default/gdy-w-styczniu.html.twig');
+}
 }
